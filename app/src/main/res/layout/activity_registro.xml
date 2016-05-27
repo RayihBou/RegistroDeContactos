@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="comrayihbou.github.registrocontactos.Registro"
+    android:background="@color/colorPrimaryDark">
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/LayoutNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre"
+            android:textColor="@color/colorText"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/LayoutFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/MargenLayout"
+        android:layout_below="@+id/LayoutNombre"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiFecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/fecha"
+            android:onClick="onDateSet"
+            android:textColor="@color/colorText"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/LayoutTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LayoutFecha"
+        android:layout_marginTop="@dimen/MargenLayout"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/telefono"
+            android:textColor="@color/colorText"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/LayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LayoutTelefono"
+        android:layout_marginTop="@dimen/MargenLayout"
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:textColor="@color/colorText"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tvMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descripcion"
+        android:layout_below="@+id/LayoutEmail"
+        android:layout_marginTop="@dimen/MargenTV"
+        android:textSize="@dimen/TextSizeTV"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/LayoutDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMensaje"
+
+        >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tiDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="140"
+            android:textColor="@color/colorText"
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/botonSiguiente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Siguiente"
+        android:theme="@style/MiBotonRaised"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+</RelativeLayout>

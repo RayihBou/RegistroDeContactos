@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimaryDark"
+    tools:context="comrayihbou.github.registrocontactos.Datos">
+
+    <TextView
+        android:id="@+id/tvConfirmarDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmardatos"
+        android:gravity="center"
+        android:textSize="@dimen/TextSizeTvTitulo"
+        android:layout_marginBottom="@dimen/MargenLayout"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        />
+    
+    <TextView
+        android:id="@+id/tvMostrarNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvConfirmarDatos"
+        android:text="@string/nombre"
+        android:layout_marginTop="@dimen/MargenLayout"
+        android:textSize="@dimen/TextSizeTV"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvMostrarFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMostrarNombre"
+        android:text="@string/fecha"
+        android:layout_marginTop="@dimen/MargenLayout"
+        android:textSize="@dimen/TextSizeTV"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvMostrarTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMostrarFecha"
+        android:text="@string/telefono"
+        android:layout_marginTop="@dimen/MargenLayout"
+        android:textSize="@dimen/TextSizeTV"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvMostrarEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMostrarTelefono"
+        android:text="@string/email"
+        android:layout_marginTop="@dimen/MargenLayout"
+        android:textSize="@dimen/TextSizeTV"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvMostrarDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvMostrarEmail"
+        android:text="@string/descripcion"
+        android:layout_marginTop="@dimen/MargenLayout"
+        android:textSize="@dimen/TextSizeTV"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/BotonEditarDatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/MiBotonRaised"
+        android:layout_below="@+id/tvMostrarDescripcion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/UbicacionBoton"
+        android:text="@string/editdatos"
+        />
+
+
+</RelativeLayout>

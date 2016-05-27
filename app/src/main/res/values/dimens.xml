@@ -1,0 +1,10 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="MargenLayout">20dp</dimen>
+    <dimen name="MargenTV">40dp</dimen>
+    <dimen name="TextSizeTV">20dp</dimen>
+    <dimen name="TextSizeTvTitulo">30dp</dimen>
+    <dimen name="UbicacionBoton">62dp</dimen>
+</resources>
